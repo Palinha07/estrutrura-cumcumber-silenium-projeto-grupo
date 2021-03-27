@@ -2,11 +2,7 @@ package io.cucumber.grupo;
 
 
 import static org.junit.Assert.assertEquals;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import io.cucumber.java.pt.*;
 import io.cucumber.grupo.configuracao.*;
 import io.cucumber.grupo.CompartilhadoSteps;

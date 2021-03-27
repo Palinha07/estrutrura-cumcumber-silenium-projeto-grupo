@@ -1,5 +1,5 @@
 #language:pt
-@ignore
+
 Funcionalidade: Acessar o site da accenture a mostrar a lista de servicos
     O objetivo e ver lista de servico no site da accenture
 
@@ -10,4 +10,5 @@ Funcionalidade: Acessar o site da accenture a mostrar a lista de servicos
 	Cenario: Clicar no servico cloud
 		Dado que eu estou no site da accenture
 		E clico no menu servicos
-		Entao clico no item do menu cloud e encontro o titulo servicos de cloud
+		E clico no clico no item do menu cloud
+		Entao devo encontrar o titulo de "Servicos de Cloud"
