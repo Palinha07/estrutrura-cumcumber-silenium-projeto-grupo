@@ -1,5 +1,5 @@
 #language:pt
-
+@ignore
 Funcionalidade: Acessar o site da accenture a mostrar a lista de servicos
     O objetivo e ver lista de servico no site da accenture
 
