@@ -83,7 +83,7 @@ e clico no menu sobre a accenture<br>
 e clico no item do menu sobre a accenture<br>
 Então devo ver o destaque em "Nosso propósito"<br>
 
---------------------------------------------------------------------
+----------------------------------------------------------------------
 
 ## Tecnologias utilizadas
 :heavy_check_mark: <b>Java</b><br>
