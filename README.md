@@ -74,7 +74,7 @@ E digito no campo de busca Desenvolvedor<br>
 E clico no botao procurar<br>
 Entao devo encontrar vagas para programadores<br>
 
-### Caso de teste
+### Caso de teste 4
 Sobre a accenture<br>
 
 <b>Cenário</b>: Ver as características da accenture<br>
