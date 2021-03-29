@@ -12,15 +12,12 @@ public class CasoDeTeste4Steps {
     public void clico_no_menu_sobre_a_accenture() throws InterruptedException {
         Thread.sleep(3000);
         Configuracao.browser.findElement(By.xpath("//*[@id=\"navigation-menu\"]/div[5]/div[1]")).click();
-
     }
 
     @Dado("clico no item do menu sobre a accenture")
     public void clico_no_item_do_menu_sobre_a_accenture() throws InterruptedException {
         Thread.sleep(5000);
         Configuracao.seletorQueryCss("div[data-id='primaryLink5_SobreaAccenture']").click();
-        //Configuracao.abrir("https://www.accenture.com/br-pt/about/company-index");
- 
     }
 
     @Entao("devo ver o destaque em {string}")

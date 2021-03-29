@@ -6,6 +6,5 @@ public class CompartilhadoSteps {
 	public static void abrirSiteAccenture() {
 	Configuracao.abrir("https://www.accenture.com.br/");
 	}
-	
 
 }

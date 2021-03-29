@@ -22,7 +22,7 @@ public class CasoDeTeste1Steps {
 	@Entao("aceito os termos LGPD")
 	public void aceito_os_termos_LGPD() throws InterruptedException {
 		Configuracao.seletorQueryCss("#onetrust-pc-btn-handler").click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		Configuracao.seletorQueryCss(".save-preference-btn-handler.onetrust-close-btn-handler").click();
 	}
 
