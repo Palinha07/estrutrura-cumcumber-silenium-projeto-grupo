@@ -1,11 +1,12 @@
-# Grupo: 404 O nome do grupo não existe
-Integrantes: <br>
+# Projeto QA 404-Este Grupo não Existe! - Accenture
+
+<b>Este projeto foi elaborado por:</b>
 <ul>
-  <li>Elaine Moreira</li>
-  <li>Kerollainy Gomes</li>
-  <li>Manoela Paloma</li>
-  <li>Regina Moura</li>
-  <li>Vitoria Paiva</li>
+<li>Elaine Souza Moreira https://github.com/Elainemor</li>
+<li>Manoela Paloma https://github.com/Palinha07</li>
+<li>Kerolayne Gomes https://github.com/kerollainy</li>
+<li>Vitoria Paiva https://github.com/victoriardspaiva</li>
+<li>Regina Moura https://github.com/ReginaMoura</li>
 </ul>
 
 # Descrição do desafio
@@ -144,24 +145,49 @@ test.bat
 --------------------------------------------------------------------
 ## Estrutura de arquivos
 <pre>
-  driver <br>
-      |-- chromedriver -- Este é o arquivo do selenium webdriver, substitua este arquivo com a versão da sua máquina<br>
-  mvnw<br>
-  mvnw.cmd<br>
-  pom.xml<br>
-  src<br>
-    |-- test<br>
-    |  |-- java<br>
-    |  |  |-- io<br>
-    |  |  |  |-- cucumber<br>
-    |  |  |  |  |-- grupo<br>
-    |  |  |  |  |  |-- TesteSiteAcc.java -- Arquivo que configura a inicialização do Java test <br> 
-    |  |  |  |  |  |-- CasoDeTesteStep.java -- Passos escritos em java com selenium abrindo o browser e testando a aplicação<br>
-    |  |-- resources<br>
-    |  |  |-- io<br>
-    |  |  |  |-- cucumber<br>
-    |  |  |  |  |-- grupo<br>
-    |  |  |  |  |  |-- casoDeTeste.feature -- Gherkin com os cenários de teste de acordo com o meu cliente<br>
-  test.bat -- Arquivo para rodar teste no Windows<br>
-  test.sh -- Arquivo para rodar teste no Unix<br>
+$ git tree
+.gitignore
+.mvn
+   |-- wrapper
+   |   |-- MavenWrapperDownloader.java
+   |   |-- maven-wrapper.jar
+   |   |-- maven-wrapper.properties
+README.md
+driver
+   |-- chromedriver.exe
+mvnw
+mvnw.cmd
+pom.xml
+src
+   |-- main
+   |   |-- java
+   |   |   |-- io
+   |   |   |   |-- cucumber
+   |   |   |   |   |-- grupo
+   |   |   |   |   |   |-- TesteSiteAcc.java
+   |-- test
+   |   |-- java
+   |   |   |-- io
+   |   |   |   |-- cucumber
+   |   |   |   |   |-- grupo
+   |   |   |   |   |   |-- CasoDeTeste1Steps.java
+   |   |   |   |   |   |-- CasoDeTeste2Steps.java
+   |   |   |   |   |   |-- CasoDeTeste3Steps.java
+   |   |   |   |   |   |-- CasoDeTeste4Steps.java
+   |   |   |   |   |   |-- CompartilhadoSteps.java
+   |   |   |   |   |   |-- RunCucumberTest.java
+   |   |   |   |   |   |-- configuracao
+   |   |   |   |   |   |   |-- Configuracao.java
+   |   |-- resources
+   |   |   |-- io
+   |   |   |   |-- cucumber
+   |   |   |   |   |-- grupo
+   |   |   |   |   |   |-- .gitkeep
+   |   |   |   |   |   |-- casoDeTeste1.feature
+   |   |   |   |   |   |-- casoDeTeste2.feature
+   |   |   |   |   |   |-- casoDeTeste3.feature
+   |   |   |   |   |   |-- casoDeTeste4.feature
+test.bat
+test.sh
+
 </pre>
