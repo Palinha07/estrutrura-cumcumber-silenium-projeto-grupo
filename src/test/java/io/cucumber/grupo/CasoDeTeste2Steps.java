@@ -23,9 +23,28 @@ public class CasoDeTeste2Steps {
 	}
 
 	@Entao("devo ver os servicos abaixo")
-	public void devo_ver_os_servicos_abaixo(List<String> servicos) {
-	    	    
-	}
+	public void devo_ver_os_servicos_abaixo(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+		Thread.sleep(5000);
+	    	By mySelector = By.xpath("//*[@id=\"primaryLink2_Servios\"]/div/div/ul");
+	    	List<WebElement> myElements = Configuracao.browser.findElements(mySelector);  
+	    
+	    	String[] menuElements = null;
+			for(WebElement e : myElements) {
+	    		String lis = e.getText();    	
+	    		menuElements = lis.split("\n");	    		
+	    	}
+	    
+	    	int contador = 0;
+			for (int i = 0; i < menuElements.length; i++) {
+	    		String linha = dataTable.row(i).get(0);
+	    		if(menuElements[i].equals(linha)) {
+	    			contador++;
+	    		}
+		}
+	    	assertEquals(22, contador);
+	    	Configuracao.fechar();
+	}   
+
 
 	@E("clico no item do menu cloud")
 	public void clico_no_clico_no_item_do_menu_cloud() throws InterruptedException {
