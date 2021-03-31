@@ -5,16 +5,17 @@ import static org.junit.Assert.assertEquals;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import io.cucumber.datatable.DataTable;
 
 import io.cucumber.grupo.configuracao.Configuracao;
 import io.cucumber.java.pt.*;
 
 public class CasoDeTeste2Steps {
 	public WebDriver browser;
+
+	String[] menuElements;
+	int counter = 0;
 
 	@Quando("clico no menu servicos")
 	public void clico_no_menu_servicos() throws InterruptedException {
@@ -28,23 +29,21 @@ public class CasoDeTeste2Steps {
 	    	By mySelector = By.xpath("//*[@id=\"primaryLink2_Servios\"]/div/div/ul");
 	    	List<WebElement> myElements = Configuracao.browser.findElements(mySelector);  
 	    
-	    	String[] menuElements = null;
-			for(WebElement e : myElements) {
-	    		String lis = e.getText();    	
-	    		menuElements = lis.split("\n");	    		
+	    	for(WebElement e : myElements) {
+	    		String aux = e.getText();    	
+	    		menuElements = aux.split("\n");	    		
 	    	}
 	    
-	    	int contador = 0;
-			for (int i = 0; i < menuElements.length; i++) {
-	    		String linha = dataTable.row(i).get(0);
-	    		if(menuElements[i].equals(linha)) {
-	    			contador++;
+	    	for (int i = 0; i < menuElements.length; i++) {
+	    		String line = dataTable.row(i).get(0);
+	    		if(menuElements[i].equals(line)) {
+	    			counter++;
 	    		}
 		}
-	    	assertEquals(22, contador);
+	    	assertEquals(22, counter);
 	    	Configuracao.fechar();
-	}   
 
+	}
 
 	@E("clico no item do menu cloud")
 	public void clico_no_clico_no_item_do_menu_cloud() throws InterruptedException {
