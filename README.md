@@ -1,3 +1,7 @@
+![](https://img.shields.io/badge/java-v.1.8-blue.svg)
+![](https://img.shields.io/badge/cucumber-v.0.0.1-yellow.svg)
+![](https://img.shields.io/badge/selenium-v.3.141.59-green.svg)
+![](https://img.shields.io/badge/maven-v.3.3-orange.svg)
 # Projeto QA 404-Este Grupo não Existe! - Accenture
 
 <b>Este projeto foi elaborado por:</b>
@@ -9,7 +13,7 @@
 <li>Regina Moura https://github.com/ReginaMoura</li>
 </ul>
 
-# Descrição do desafio
+# Descrição do desafio :computer:
 ### Criar uma aplicação Selenium com os seguintes casos de teste
 ### Caso de teste 1
 Acessar o site da accenture e aceitar os cookies do LGPD<br>
@@ -85,8 +89,11 @@ e clico no item do menu sobre a accenture<br>
 Então devo ver o destaque em "Nosso propósito"<br>
 
 ----------------------------------------------------------------------
+link para vídeo da aplicação funcionando: https://www.youtube.com/watch?v=nP8QIM9v4HE&ab_channel=ManoelaPaloma<br>
 
-## Tecnologias utilizadas
+----------------------------------------------------------------------
+
+## Tecnologias utilizadas :bookmark_tabs:
 :heavy_check_mark: <b>Java</b><br>
 Linguagem de programação para desenvolvimento da aplicação<br>
 
@@ -143,7 +150,7 @@ test.bat
  ```
 
 --------------------------------------------------------------------
-## Estrutura de arquivos
+## Estrutura de arquivos :file_folder:
 <pre>
 $ git tree
 .gitignore
