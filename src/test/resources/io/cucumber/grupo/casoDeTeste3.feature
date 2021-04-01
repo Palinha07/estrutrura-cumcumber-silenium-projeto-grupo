@@ -1,4 +1,5 @@
 #language:pt
+@ignore
 Funcionalidade: Acessar lista de carreiras da Accenture
 
 	Cenario: Acessar o item de vagas
